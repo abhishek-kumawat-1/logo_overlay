@@ -3,6 +3,19 @@ from PIL import Image
 import os
 import shutil
 
+import openpyxl
+#LinkedIn Profile
+with st.sidebar:
+    st.write("### Abhishek Kumawat :sunglasses:")
+    st.components.v1.html(
+    """
+    <div style="display: flex; justify-content: center;">
+        <a href="https://www.linkedin.com/in/abhishek-kumawat-iitd/" target="_blank">
+            <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="35">
+        </a>
+    </div>
+    """
+    )
 def overlay_logo(image, logo, position="bottom-right", padding=10):
     """
     Overlays the logo onto the image at the specified position with padding.
